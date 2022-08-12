@@ -472,7 +472,7 @@ section {
 }
 
 .resume .resume-item {
-    padding: 0 0 20px 20px;
+    padding: 0 0 40px 20px;
     margin-top: -2px;
     border-left: 2px solid #1f5297;
     position: relative;
@@ -480,12 +480,41 @@ section {
 
 .resume .resume-item h4 {
     line-height: 18px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 20px;
+}
+
+.resume .resume-item .resume-position{
+	align-items: center;
+}
+
+.resume .resume-item .resume-position h4 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+	text-transform: none;
     font-family: "Poppins", sans-serif;
     color: #050d18;
     margin-bottom: 10px;
+	margin-left: 0.5em;
+	display: inline-flex;
+}
+
+.resume .resume-item .resume-position h {
+	display: inline-flex;
+}
+
+.resume .resume-item p {
+    font-size: 16px;
+}
+
+.resume .resume-item .subheader {
+	font-weight: 800;
+    margin-bottom: 0px;
 }
 
 .resume .resume-item h5 {
@@ -534,24 +563,28 @@ section {
 
 .courses .icon-box {
     margin-bottom: 30px;
+	display: flex;
 }
 
 .courses .icon {
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	margin-right: 10px;
 }
 
 .courses .title {
-    margin-left: 60px;
     font-weight: 700;
     font-size: 18px;
+	display: inline;
+	margin-right: 0.5em;
 }
 
 .courses .description {
-    margin-left: 60px;
+	font-weight: 400;
     font-size: 14px;
+	margin-top: 3px;
+}
+
+.courses .inline {
+	display: inline;
 }
 
 /*--------------------------------------------------------------
@@ -747,10 +780,11 @@ section {
 }
 
 .contact .info {
-    padding: 30px;
+    padding: 20px 30px;
     background: #fff;
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+	margin-bottom: 20px;
 }
 
 .contact .info i {
@@ -777,13 +811,12 @@ section {
 
 .contact .info p {
     padding: 0 0 10px 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 14px;
     color: #173b6c;
 }
 
 .contact .info .email p {
-    padding-top: 5px;
 }
 
 .contact .info .social-links {
@@ -808,6 +841,11 @@ section {
 .contact .info .social-links a:hover {
     background: #149ddd;
     color: #fff;
+}
+
+.contact .info .address {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .contact .info .email:hover i,
